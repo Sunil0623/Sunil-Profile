@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base / font */
+:root {
+  --muted: #6b7280;
+  --accent: #4f46e5; /* indigo-600 */
+  --card: #ffffff;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #f8fafc; /* subtle off-white */
+}
+
+/* Headings */
+h1, h2, h3 {
+  letter-spacing: -0.02em;
+}
+
+/* Card subtle glass */
+.bg-white.rounded-2xl {
+  background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(250,250,250,0.98));
+}
+
+/* Buttons (global subtle lift) */
+button, a.inline-flex {
+  transition: transform .16s cubic-bezier(.2,.8,.2,1), box-shadow .16s ease;
+}
+button:hover:not([disabled]), a.inline-flex:hover {
+  transform: translateY(-3px);
+}
+
+/* Toast animation */
+@keyframes toastIn {
+  from { transform: translateY(12px) scale(.98); opacity: 0; }
+  to   { transform: translateY(0) scale(1); opacity: 1; }
+}
+@keyframes toastOut {
+  from { transform: translateY(0) scale(1); opacity: 1; }
+  to   { transform: translateY(12px) scale(.98); opacity: 0; }
+}
+/* we reuse animate-toast for in/out; it's okay for short-lived toast */
+.animate-toast {
+  animation: toastIn .28s cubic-bezier(.2,.9,.3,1);
+}
+
+/* small utility */
+.text-muted { color: var(--muted); }
+
+/* Responsive tweaks */
+@media (min-width: 768px) {
+  .hero-lead { font-size: 1.35rem; }
+}
