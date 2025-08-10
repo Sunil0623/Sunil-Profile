@@ -122,7 +122,7 @@ export default function App() {
         <div className="max-w-6xl mx-auto px-6 py-6 flex items-center justify-between">
           <div className="flex items-center gap-4">
             <div className="w-14 h-14 rounded-full overflow-hidden border border-slate-200 shadow-sm">
-              <img src="/Raghav.jpeg" alt="Sunil Gowda" className="w-full h-full object-cover" />
+              <img src="/public/Raghav.jpeg" alt="Sunil Gowda" className="w-full h-full object-cover" />
             </div>
             <div>
               <div className="text-base text-slate-800 font-semibold">SUNIL GOWDA S</div>
@@ -196,7 +196,7 @@ export default function App() {
 
           <aside className="flex flex-col items-center">
             <div className="w-52 h-52 rounded-xl overflow-hidden border border-slate-200 shadow-lg">
-              <img src="/Raghav.jpeg" alt="Sunil profile" className="w-full h-full object-cover" />
+              <img src="/public/Raghav.jpeg" alt="Sunil profile" className="w-full h-full object-cover" />
             </div>
             <div className="mt-4 text-sm text-slate-500 text-center">Sunil Gowda S<br />Aspiring software professional</div>
           </aside>
