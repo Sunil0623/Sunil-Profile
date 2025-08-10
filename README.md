@@ -17,4 +17,4 @@ To deploy to GitHub Pages:
 
 Replace placeholders:
 - public/profile-placeholder.png -> replace with your photo
-- Update GitHub links in src/App.jsx (replace <GITHUB_USERNAME>)
+  
