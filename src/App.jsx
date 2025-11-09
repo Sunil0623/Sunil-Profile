@@ -211,7 +211,7 @@ export default function App() {
               <div className="flex items-start justify-between">
                 <div>
                   <h3 className="text-lg font-semibold">Trade Analyst Support (Contract Employee)</h3>
-                  <div className="text-sm text-slate-500">Randstad India - Client: J.P. Morgan Chase & Co. · Feb 2025 – Present</div>
+                  <div className="text-sm text-slate-500">Randstad India - Client: J.P. Morgan Chase & Co. · Feb 2025 – Oct 2025</div>
                 </div>
                 <div className="text-sm text-slate-600 font-medium">Maker · SBLC</div>
               </div>
